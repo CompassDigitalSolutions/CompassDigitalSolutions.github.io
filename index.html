@@ -4,40 +4,87 @@
 <title>Personal Savings Calculator</title>
 <style>
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0; 
+  font-family: sans-serif;
+  background-color: #f0f0f0;
 }
 #menu {
-     background-color: #ffffff;
-    padding: 10px;
-    width: 100%; /* Make the menu bar full width */
-    position: fixed; /* Fix it to the top */
-    top: 0;
-    left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 100%; 
+  position: fixed; 
+  top: 0;
+  left: 0;
 }
 #menu h1 {
-    text-align: left; 
-    margin: 0; 
-    padding-left: 80px;
+  text-align: left;
+  margin: 0;
+  padding-left: 80px;
 }
 #content {
-    text-align: center;
-    padding: 20px;
-    margin-top: 200px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 200px;
 }
 h2 {
-    margin-top: 0;
+  margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
 }
 </style>
 </head>
 <body>
-    <div id="menu">
-        <h1>Personal Savings Calculator</h1>
-    </div>
+  <div id="menu">
+    <h1>Personal Savings Calculator</h1>
+  </div>
 
-    <div id="content">
-        <h2>Privacy Policy</h2>
-        <p>Savings Calculator does not collect any data.</p>
-    </div>
+  <div id="content">
+    <h2>Privacy Policy</h2>
+    <p>Savings Calculator does not collect any data.</p>
+  </div>
+
+  <footer>
+    <form action="mailto:personalmoneymanagementapps@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br><br>
+      <button type="submit">Send</button>
+    </form>
+  </footer>
 </body>
 </html>
